@@ -24,9 +24,10 @@ requirements:
     - setuptools
   run:
     - python >=3.6
+    - dask
+    - h5netcdf
     - ipyleaflet
     - matplotlib-base
-    - netcdf4
     - numpy
     - rioxarray
     - setuptools-scm
