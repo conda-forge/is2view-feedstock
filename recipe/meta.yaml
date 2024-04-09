@@ -1,5 +1,5 @@
 {% set name = "IS2view" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: addb349431d03a81d3c3e8dad0835f818bd2ab56dc88545e3b301334a18d4310
+  sha256: 17f04a2c076d81f23e3480ea11f2838e69c0917e50f7298be72f9d1a7795b770
 
 build:
   number: 0
