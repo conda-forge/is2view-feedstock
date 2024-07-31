@@ -1,13 +1,14 @@
 {% set name = "IS2view" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
+{% set sha256 = "c62e63e45c6a6933cc4c2f62978b048092e2758c300b5d79dc5b63a5eed22fcd" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17f04a2c076d81f23e3480ea11f2838e69c0917e50f7298be72f9d1a7795b770
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -23,12 +24,12 @@ requirements:
     - setuptools-scm
     - setuptools
   run:
-    - python >=3.6
     - dask
     - h5netcdf
     - ipyleaflet
     - matplotlib-base
     - numpy
+    - python >=3.6
     - rioxarray
     - setuptools-scm
     - setuptools
