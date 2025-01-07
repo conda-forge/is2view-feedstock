@@ -1,6 +1,6 @@
 {% set name = "IS2view" %}
-{% set version = "0.0.9" %}
-{% set sha256 = "c62e63e45c6a6933cc4c2f62978b048092e2758c300b5d79dc5b63a5eed22fcd" %}
+{% set version = "0.1.1" %}
+{% set sha256 = "ec79b4c96d2b8277f76ef85cb48beb858b053da3b619696919e4d093a7fc0874" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
